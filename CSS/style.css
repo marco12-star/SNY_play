@@ -25,6 +25,10 @@ a.logo img {
     max-width: 300px;
 }
 
+a.logo img:nth-child(2) {
+    max-height: 200px;
+}
+
 h2 {
     margin-bottom: 10px;
     text-align: center;
@@ -180,4 +184,34 @@ select {
     margin: 0 auto;
 }
 
-/* Configure */
+@media all and (max-width: 767px) {
+    .input__wrap {
+        flex-wrap: wrap;
+    }
+
+    .address__input .column:first-child {
+        width: 100%;
+        margin-bottom: 12px;
+    }
+
+    .address__input .column:nth-child(2) {
+        width: 68%;
+    }
+
+    .address__input .column:last-child {
+        width: 30%;
+    }
+}
+
+@media all and (max-width: 767px) {
+    a.logo img {
+        max-width: 250px;
+    }
+
+    .flex {
+        flex-wrap: wrap;
+    }
+    .flex .btn {
+        margin-bottom: 12px;
+    }
+}
